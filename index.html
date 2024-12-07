@@ -9,12 +9,16 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-    .pdf-container {
+    .pdf-fullscreen {
       width: 100%;
-      height: 150vh; /* Increase the height to make the PDF display larger */
-      border: none; /* Remove iframe border for a cleaner look */
-      margin-top: 20px;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: block;
+      border: none;
     }
   </style>
 </head>
@@ -25,22 +29,18 @@
       <div class="container">
         <h1 class="title is-2 has-text-centered">ASML Tunable Wavefront Control Metasurface</h1>
         <h2 class="subtitle has-text-centered">
-          Ping Sun<sup>1</sup>, Zhengyang Zhang<sup>1</sup>, Mingzhe Han<sup>1</sup>, Edith Koo<sup>1</sup>, Michele Cotrufo<sup>2</sup>
+          Ping Sun, Zhengyang Zhang, Mingzhe Han, Edith Koo, Michele Cotrufo
         </h2>
         <p class="has-text-centered">
-          <sup>1</sup>The Institute of Optics, University of Rochester, Rochester, NY, USA<br>
-          <sup>2</sup>Principal Investigator, The Institute of Optics, University of Rochester, Rochester, NY, USA<br>       
+          The Institute of Optics, University of Rochester, Rochester, NY, USA<br>
           <strong>Dated:</strong> May, 2024
         </p>
       </div>
     </div>
   </section>
 
-  <!-- PDF Display Section -->
-  <section class="section">
-    <div class="container">
-      <iframe src="static/ASML%20Metawave%20Senior%20Design%20Poster.pdf#zoom=150" class="pdf-container"></iframe>
-    </div>
-  </section>
+  <!-- PDF Fullscreen Display -->
+  <embed src="static/ASML%20Metawave%20Senior%20Design%20Poster.pdf#zoom=150" type="application/pdf" class="pdf-fullscreen">
 </body>
 </html>
+
